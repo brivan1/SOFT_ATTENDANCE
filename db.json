@@ -1,0 +1,46 @@
+{
+    "members": [
+      {
+        "id": 1,
+        "firstName": "James",
+        "lastName": "Ten",
+        "phoneNumber": "0700000000",
+        "action": "Delete"
+      },
+      {
+        "id": 2,
+        "firstName": "Ian",
+        "lastName": "Two",
+        "phoneNumber": "0700000001",
+        "action": "Delete"
+      },
+      {
+        "id": 3,
+        "firstName": "Ken",
+        "lastName": "Three",
+        "phoneNumber": "0700000002",
+        "action": "Delete"
+      },
+      {
+        "id": 4,
+        "firstName": "Stacey",
+        "lastName": "Four",
+        "phoneNumber": "0700000003",
+        "action": "Delete"
+      },
+      {
+        "id": 5,
+        "firstName": "Vee",
+        "lastName": "Five",
+        "phoneNumber": "0700000004",
+        "action": "Delete"
+      },
+      {
+        "id": 6,
+        "firstName": "Bobo",
+        "lastName": "Six",
+        "phoneNumber": "0700000005",
+        "action": "Delete"
+      }
+    ]
+  }
