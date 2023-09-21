@@ -1,7 +1,4 @@
-const { JSDOM } = require('jsdom');
-const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
-const document = dom.window.document;
-
+if (typeof window !== "undefined"){
 const registerForm = document.getElementById('register-form')
 const membersList = document.getElementById('members-list')
 
@@ -65,3 +62,5 @@ async function handleDelete(e) {
 }
 
 displayMembers()
+
+}
