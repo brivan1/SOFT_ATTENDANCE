@@ -1,3 +1,7 @@
+const { JSDOM } = require('jsdom');
+const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
+const document = dom.window.document;
+
 const registerForm = document.getElementById('register-form')
 const membersList = document.getElementById('members-list')
 
