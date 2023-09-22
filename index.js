@@ -1,10 +1,9 @@
-if (typeof window !== "undefined"){
 const registerForm = document.getElementById('register-form')
 const membersList = document.getElementById('members-list')
 
 // Fetch members from JSON Server 
 async function getMembers() {
-  const response = await fetch('http://localhost:3000/members')
+  const response = await fetch('https://leo-backend-zz6l.onrender.com/members')
   const members = await response.json()
   return members
 }
@@ -35,7 +34,7 @@ registerForm.addEventListener('submit', async e => {
   let lastName = document.getElementById('lastName').value
   let phoneNumber = document.getElementById('phoneNumber').value
 
-  const response = await fetch('http://localhost:3000/members', {
+  const response = await fetch('https://leo-backend-zz6l.onrender.com/members', {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -53,7 +52,7 @@ registerForm.addEventListener('submit', async e => {
 // Delete a member 
 async function handleDelete(e) {
   const memberId = e.target.getAttribute('data_id')
-  const response = await fetch(`http://localhost:3000/members/${memberId}`, {
+  const response = await fetch(`https://leo-backend-zz6l.onrender.com/members/${memberId}`, {
     method: "DELETE"
   })
   await response.json()
@@ -62,5 +61,3 @@ async function handleDelete(e) {
 }
 
 displayMembers()
-
-}
